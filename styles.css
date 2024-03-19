@@ -1,8 +1,13 @@
 body{
     font-family: Tomorrow, sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #ebebeb;
+    margin: 0;
+}
+
+#wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 #nav-bar{
@@ -44,4 +49,43 @@ a:hover{
 a:active{
     background-color: black;
     color: white;
+}
+
+#name {
+    align-items: center;
+    text-align: right;
+}
+
+#homepage h1{
+    text-align: center;
+    font-style: Tomorrow;
+    font-size: 6.5em;
+    padding-top: 150px;
+    padding-bottom: 0;
+}
+
+#homepage h2{
+    text-align: center;
+    font-style: Tomorrow;
+    padding-left: 300px;
+    font-size: 4em;
+    margin-top: 5px;
+    font-style: italic;
+    color: grey;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #nav-bar ul {
+        justify-content: center;
+    }
+
+    #nav-bar li {
+        margin: 0 10px;
+    }
+
+    #name {
+        height: auto;
+        padding: 20px 0;
+    }
 }
